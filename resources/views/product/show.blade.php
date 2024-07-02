@@ -24,7 +24,8 @@
                 <div class="mb-2">
                     <span class="fs-5 fw-semibold">{{ $product->name }}</span>
                     <div class="h6 py-1">
-                        <a href="{{route('index', $product->category->id)}}" class="text-secondary text-decoration-none">
+                        <a href="{{route('index', $product->category->id)}}"
+                           class="text-secondary text-decoration-none">
                             {{ $product->category->getName() }}
                         </a>
                     </div>
