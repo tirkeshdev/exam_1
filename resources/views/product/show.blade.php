@@ -60,9 +60,6 @@
                 <div class="h5 text-secondary">
                     @lang('app.material'): {{$product->material->getName()}}
                 </div>
-                <div class="h5 text-secondary">
-                    {{$product->made->name}}
-                </div>
                 <div class="h5 text-secondary pb-2">
                     {{$product->size->getName()}}
                 </div>

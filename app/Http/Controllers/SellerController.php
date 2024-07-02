@@ -13,7 +13,7 @@ class SellerController extends Controller
         $seller = Seller::findOrFail($id);
 
 
-        return view('sellers.show',
+        return view('seller.show',
             ['seller' => $seller,]);
     }
 }
