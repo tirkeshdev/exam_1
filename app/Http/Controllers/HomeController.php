@@ -10,19 +10,19 @@ class HomeController extends Controller
     public function index()
     {
 
-        $discounts_count = Product::where('discount_percent' ,'>',0)
+        $discounts_count = Product::where('discount_percent', '>', 0)
             ->count();
 
-        $discount_products = Product::where('discount_percent' ,'>',0)
+        $discount_products = Product::where('discount_percent', '>', 0)
             ->take(9)
             ->with('category')
             ->get();
 
 
-        $builts_count = Product::where('built' , true)
+        $builts_count = Product::where('built', true)
             ->count();
 
-        $built_products = Product::where('built' , true)
+        $built_products = Product::where('built', true)
             ->take(9)
             ->get();
 
@@ -35,10 +35,6 @@ class HomeController extends Controller
                 'built_products' => $built_products,
             ]);
     }
-
-
-
-
 
 
     public function locale($locale)

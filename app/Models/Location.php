@@ -12,7 +12,8 @@ class Location extends Model
         'id'
     ];
 
-    public function sellers():HasMany {
+    public function sellers(): HasMany
+    {
 
         return $this->hasMany(Seller::class);
 
