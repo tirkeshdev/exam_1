@@ -28,7 +28,6 @@ class BrandSeeder extends Seeder
             'American Signature',
             'Raymour & Flanigan',
             'Liberty Furniture',
-
         ];
 
         foreach ($brands as $brand){

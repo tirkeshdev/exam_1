@@ -27,10 +27,12 @@
         <label for="password" class="form-label">@lang('app.password')</label>
         <div class="row g-2">
             <div class="col">
-                <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" required>
+                <input type="password" class="form-control @error('password') is-invalid @enderror" id="password"
+                       name="password" required>
             </div>
             <div class="col-auto">
-                <button type="button" class="btn btn-light" id="btn-password" value="0"><i class="bi-eye-slash-fill"></i></button>
+                <button type="button" class="btn btn-light" id="btn-password" value="0"><i
+                            class="bi-eye-slash-fill"></i></button>
             </div>
         </div>
         <script>
@@ -52,9 +54,9 @@
     </div>
 
     {{--<div class="form-floating pb-3">--}}
-        {{--<input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password"--}}
-               {{--required>--}}
-        {{--<label for="floatingPassword" class="text-black">@lang('app.password')</label>--}}
+    {{--<input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password"--}}
+    {{--required>--}}
+    {{--<label for="floatingPassword" class="text-black">@lang('app.password')</label>--}}
     {{--</div>--}}
 
     <button class="btn btn-primary w-100 py-2" type="submit">@lang('app.login')</button>

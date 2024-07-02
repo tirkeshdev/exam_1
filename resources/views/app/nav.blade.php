@@ -1,5 +1,6 @@
 <div class="flex-shrink-0 p-3 sticky-top" style="width: 280px;">
-    <a href="/" class="p-2 mb-3 link-body-emphasis text-decoration-none bg-warning bg-opacity-50" style="border: black solid 3px">
+    <a href="/" class="p-2 mb-3 link-body-emphasis text-decoration-none bg-warning bg-opacity-50"
+       style="border: black solid 3px">
         <span class="fs-5 fw-semibold">@lang('app.appName')</span><i class="bi-house-check ps-1 h5"></i>
     </a>
     <ul class="list-unstyled ps-0 py-4">
@@ -19,7 +20,8 @@
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         @foreach($categorySub['subs'] as $subcategory)
                             <li>
-                                <a href="{{route('index', $subcategory->id)}}" class="link-body-emphasis d-inline-flex text-decoration-none rounded h6">
+                                <a href="{{route('index', $subcategory->id)}}"
+                                   class="link-body-emphasis d-inline-flex text-decoration-none rounded h6">
                                     {{$subcategory->getName()}}
                                 </a>
                                 <small class="text-warning h6">
