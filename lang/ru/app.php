@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'appName' => 'Furniture Store',
+    'similar' => 'Похожие товары',
+    'home' => 'Главная страница',
+    'material' => 'Материал',
+    'brand' => 'Марка',
+    'color' => 'Цвет',
+    'search' => 'Поиск',
+    'discount' => 'Скидка',
+    'languages' =>'Язык',
+    'language' =>'Язык',
+    'addtocart' => 'Добавить в карту',
+    'category' => 'Категория',
+    'publish year' => 'Год публикации',
+    'description' => 'Описание',
+    'sort' => 'Сорт',
+    'perPage' => 'На странице',
+    'filter' => 'Фильтр',
+    'clear' => 'Очистить',
+    'built' => 'Построен',
+    'newToOld' => 'От нового до старого',
+    'oldToNew' => 'От старого до нового',
+    'lowToHigh' => 'От низкого до высокого',
+    'highToLow' => 'От высокого до низкого',
+];
