@@ -1,10 +1,17 @@
 <?php
 
+use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SellerController;
 use Illuminate\Support\Facades\Route;
 
+Route::controller(LoginController::class)
+    ->group(function () {
+        Route::get('login', 'create')->middleware('guest')->name('login');
+        Route::post('login', 'store')->middleware('guest');
+        Route::post('logout', 'destroy')->middleware('auth')->name('logout');
+    });
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/category/{id}', [ProductController::class, 'index'])->name('index');
 Route::get('/seller/{id}', [SellerController::class, 'show'])->name('seller_show');
