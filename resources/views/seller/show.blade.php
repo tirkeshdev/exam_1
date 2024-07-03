@@ -5,7 +5,7 @@
 @endsection
 
 @section('body')
-    <div class="ps-5">
+    <div class="ps-5 d-none d-md-block">
         <div class="ps-5">
             <div class="ps-5">
                 <div class="card text-center" style="width:60rem;margin:40px 0 48px 0">
@@ -42,5 +42,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="display-1 fw-bold text-center d-md-none d-block">
+        Oops!Page not found.
     </div>
 @endsection

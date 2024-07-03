@@ -76,7 +76,7 @@
         </div>
         <div class="row pt-5">
             @foreach($similar as $product)
-                <div class="col">
+                <div class="col-12 col-md-3">
                     @include('app.product')
                 </div>
             @endforeach

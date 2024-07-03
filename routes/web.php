@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SellerController;
@@ -12,6 +13,13 @@ Route::controller(LoginController::class)
         Route::post('login', 'store')->middleware('guest');
         Route::post('logout', 'destroy')->middleware('auth')->name('logout');
     });
+
+Route::middleware('guest')
+    ->group(function () {
+        Route::get('register', [RegisterController::class, 'create'])->name('register');
+        Route::post('register', [RegisterController::class, 'store']);
+    });
+
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/category/{id}', [ProductController::class, 'index'])->name('index');
 Route::get('/seller/{id}', [SellerController::class, 'show'])->name('seller_show');

@@ -11,7 +11,7 @@
 </head>
 
 <body class=" text-black w-100 m-auto" style="max-width: 330px;padding: 1rem">
-<form action="{{route('admin.login')}}" method="post">
+<form action="{{route('login')}}" method="post">
     @csrf
     <div class="text-center">
         <i class="bi bi-person h1 border rounded-pill py-2 px-3"></i>
@@ -52,12 +52,6 @@
         <div class="alert alert-danger mt-2">{{ $message }}</div>
         @enderror
     </div>
-
-    {{--<div class="form-floating pb-3">--}}
-    {{--<input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password"--}}
-    {{--required>--}}
-    {{--<label for="floatingPassword" class="text-black">@lang('app.password')</label>--}}
-    {{--</div>--}}
 
     <button class="btn btn-primary w-100 py-2" type="submit">@lang('app.login')</button>
 

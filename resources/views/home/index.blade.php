@@ -5,7 +5,9 @@
 @endsection
 
 @section('body')
-    @include('app.banner')
+    <div class="d-md-block d-none">
+        @include('app.banner')
+    </div>
     <div class="py-3">
         <div class="py-3">
             <a href="{{route('discounts')}}" class="text-danger h1 text-decoration-none ps-2">
